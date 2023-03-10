@@ -6,13 +6,14 @@ import NavBar from './Components/NavBar';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Home from './Components/Home/Home';
 function App() {
   return (
     <Router>
       <div className="App">
         <NavBar/>
         <Routes>
-          <Route path="/" /*element={}*//>
+          <Route path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
