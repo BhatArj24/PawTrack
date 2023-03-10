@@ -37,7 +37,7 @@ const Login = () => {
 			}
 		});
 		if(!validUser){
-			console.log("Login Failed");
+			window.alert("Invalid Credentials");
 		}
 	};
     return(
