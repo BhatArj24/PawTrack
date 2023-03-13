@@ -17,8 +17,6 @@ const Dashboard = () => {
   const [goalModal, setGoalModal] = useState(false);
   const [exercise, setExercise] = useState({exerciseName:"", intensityLevel:1, caloriesBurned:0, date:""});
   
-
-
   useEffect(() => {
     const userId = localStorage.getItem("userId");
     if (!userId) {
@@ -60,8 +58,6 @@ const Dashboard = () => {
           calorieGoal: u.calorieGoal,
           caloriesBurned: totalBurned
         });
-        
-
 
       }
     });
