@@ -9,7 +9,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <NavBar/>
         <Routes>
