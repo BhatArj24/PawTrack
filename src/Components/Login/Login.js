@@ -25,21 +25,20 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setValidUser(false);
-		users.map((user) => {
+		for (const user of users) {
 			var decoded = Base64.decode(user.password);
-			// var decoded = user.password;
 			if (user.email === data.email.toLowerCase() && decoded === data.password) {
 				localStorage.setItem("userId",user.id);
 				console.log(user.id)
 				console.log("Login Successfull");
 				setValidUser(true);
 				navigate("/dashboard");
+				return; // exit the loop when a valid user is found
 			}
-		});
-		if(!validUser){
-			window.alert("Invalid Credentials");
 		}
+		window.alert("Invalid Credentials");
 	};
+	
     return(
         
         <section>

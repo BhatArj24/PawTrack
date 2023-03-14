@@ -1,10 +1,11 @@
+import React from 'react'
+import Logo from "../../Images/PawTrackLogo.png";
+
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
-            {/* need more content */}
-
+        <div style={{width:"100%"}}>
+            <img src={Logo} alt="Logo" style={{marginLeft:"34%"}} />
         </div>
     )
 }
