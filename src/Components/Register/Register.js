@@ -68,12 +68,7 @@ const Register = () => {
                                 className={styles.input}
                                 style={{marginBottom:"5%"}}
                             />
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                name="email"
-                                onChange={handleChange}
-                                value={data.email}
+                            <input type="email"placeholder="Email"name="email"onChange={handleChange}value={data.email}
                                 required
                                 className={styles.input}
                                 style={{marginBottom:"5%"}}
